@@ -31,7 +31,7 @@ namespace LAB_1___SQL.Methods.Staff
                     command.Parameters.AddWithValue("@Last_Name", staffprefixName);
                     command.Parameters.AddWithValue("@Profession", staffProfession);
 
-                    try
+                    try //Error handling
                     {
                         int rowsAffected = command.ExecuteNonQuery(); 
 
