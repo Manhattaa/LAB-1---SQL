@@ -18,7 +18,7 @@ namespace LAB_1___SQL.Methods.GradesAndClasses
             {
                 connection.Open();
 
-               
+
                 string query = "SELECT " +
                                "Courses.CourseID, " +
                                "Courses.Course_Name, " +
@@ -26,7 +26,7 @@ namespace LAB_1___SQL.Methods.GradesAndClasses
                                "MAX(Grades.Grade) AS MaxGrade, " +
                                "MIN(Grades.Grade) AS MinGrade " +
                                "FROM Courses " +
-                               "LEFT JOIN Grades ON Courses.CourseID = Grades.CourseID " +  
+                               "LEFT JOIN Grades ON Courses.CourseID = Grades.CourseID ";  
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
